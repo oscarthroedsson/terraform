@@ -10,9 +10,9 @@ terraform {
 
 provider "google" {
   credentials = file("~/terraform-key.json")                    # JSON-key
-  project     = "terraform-447812"                              # Project-ID
-  region      = "europe-north1"                                 # Region
-  zone        = "europe-north1-a"                               # zone
+  project     = var.project-id                            # Project-ID
+  region      = var.region                                # Region
+  zone        = var.zone                              # zone
 }
 
 resource "google_storage_bucket" "example_bucket" {
