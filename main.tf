@@ -22,7 +22,7 @@ resource "google_storage_bucket" "example_bucket" {
 }
 
 resource "google_compute_instance" "default" {
-    name                 ="my-instance-google"                  # Name of instance
+    name                 ="my-updated-instance-google"                  # Name of instance
     machine_type         ="e2-micro"                            # General 
 
     boot_disk {
