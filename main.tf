@@ -15,7 +15,7 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "example_bucket" {
-  name          = "terroaform-app-123"                          # Unique name
+  name          = "terraform-app-123"                          # Unique name
   location      = "EU"                                          # Placement of bucket
   storage_class = "STANDARD"                                    # Storage class
 }
