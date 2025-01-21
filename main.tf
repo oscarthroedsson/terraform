@@ -9,7 +9,6 @@ terraform {
 }
 
 provider "google" {
-   credentials = file("~/terraform-key.json")  # JSON-key
   project     = var.project-id
   region      = var.region                            # Region
   zone        = var.zone                              # zone
