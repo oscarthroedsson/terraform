@@ -15,3 +15,8 @@ variable "zone" {
     type = string
     default = "europe-north1-a"
 }
+variable "github_repo" {
+  description = "GitHub repository in format OWNER/REPO"
+  type        = string
+  default     = "oscarthroedson/terraform"
+}
